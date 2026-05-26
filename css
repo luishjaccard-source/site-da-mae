@@ -1,0 +1,453 @@
+/* RESET */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+  font-family:'Poppins', sans-serif;
+  background:#000;
+  color:white;
+  overflow-x:hidden;
+
+}
+
+/* FUNDO */
+
+.bg-overlay{
+
+  position:fixed;
+  inset:0;
+
+  background:
+  linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.88)),
+  url('ChatGPT\ Image\ 24\ de\ mai.\ de\ 2026\,\ 17_30_16.png');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  z-index:-1;
+
+}
+
+/* HERO */
+
+.hero{
+
+  min-height:100vh;
+  padding:70px 35px;
+
+}
+
+.container{
+
+  max-width:1650px;
+  margin:auto;
+
+}
+
+/* CARD PRINCIPAL */
+
+.perfil{
+
+  display:flex;
+  align-items:center;
+  gap:55px;
+
+  padding:50px;
+
+  border-radius:40px;
+
+  background:rgba(15,15,15,.68);
+
+  border:2px solid rgba(212,175,55,.7);
+
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+  0 0 50px rgba(212,175,55,.15),
+  0 20px 50px rgba(0,0,0,.6);
+
+  margin-bottom:80px;
+
+}
+
+/* LOGO */
+
+.logo{
+
+  width:250px;
+  height:250px;
+
+  border-radius:50%;
+  overflow:hidden;
+
+  border:5px solid #d4af37;
+
+  box-shadow:
+  0 0 40px rgba(212,175,55,.8);
+
+  flex-shrink:0;
+
+}
+
+.logo img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+/* INFO */
+
+.info h1{
+
+  font-size:78px;
+  font-weight:700;
+
+  margin-bottom:15px;
+
+  line-height:1.1;
+
+}
+
+.destaque{
+
+  color:#f4c542;
+
+  font-size:38px;
+  font-weight:700;
+
+  margin-bottom:12px;
+
+}
+
+.descricao{
+
+  font-size:26px;
+  color:#f1f1f1;
+
+  margin-bottom:12px;
+
+}
+
+.cidade{
+
+  font-size:23px;
+  color:#ddd;
+
+  margin-bottom:30px;
+
+}
+
+/* BOTÕES */
+
+.botoes{
+
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+
+}
+
+.btn{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  padding:18px 38px;
+
+  border-radius:16px;
+
+  text-decoration:none;
+  color:white;
+
+  font-size:22px;
+  font-weight:600;
+
+  transition:.3s;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.4);
+
+}
+
+.btn:hover{
+
+  transform:
+  translateY(-6px)
+  scale(1.03);
+
+}
+
+/* WHATS */
+
+.whats{
+
+  background:#25D366;
+
+}
+
+/* INSTAGRAM */
+
+.insta{
+
+  background:
+  linear-gradient(
+    45deg,
+    #833AB4,
+    #FD1D1D,
+    #FCAF45
+  );
+
+}
+
+/* TITULO */
+
+.titulo-area{
+
+  text-align:center;
+  margin-bottom:65px;
+
+}
+
+.titulo-area h2{
+
+  font-size:78px;
+  color:#d4af37;
+  font-weight:600;
+
+  margin-bottom:15px;
+
+  text-shadow:
+  0 0 20px rgba(212,175,55,.3);
+
+}
+
+/* LINHA */
+
+.linha{
+
+  width:220px;
+  height:4px;
+
+  background:#d4af37;
+
+  margin:auto;
+
+  border-radius:20px;
+
+  position:relative;
+
+}
+
+.linha::after{
+
+  content:"❤";
+
+  position:absolute;
+
+  left:50%;
+  top:-18px;
+
+  transform:translateX(-50%);
+
+  color:#d4af37;
+  background:#000;
+
+  padding:0 12px;
+
+  font-size:24px;
+
+}
+
+/* GALERIA */
+
+.galeria{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(380px,1fr));
+
+  gap:40px;
+
+}
+
+/* FOTO */
+
+.foto{
+
+  border-radius:35px;
+  overflow:hidden;
+
+  border:2px solid rgba(212,175,55,.65);
+
+  box-shadow:
+  0 20px 45px rgba(0,0,0,.6);
+
+  transition:.4s;
+
+  cursor:pointer;
+
+  aspect-ratio:1/1;
+
+  background:#111;
+
+  min-height:380px;
+
+}
+
+.foto:hover{
+
+  transform:
+  translateY(-10px)
+  scale(1.02);
+
+  box-shadow:
+  0 0 35px rgba(212,175,55,.4);
+
+}
+
+.foto img{
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+
+  transition:.5s;
+
+}
+
+.foto:hover img{
+
+  transform:scale(1.08);
+
+}
+
+/* FOOTER */
+
+footer{
+
+  text-align:center;
+
+  padding:40px;
+
+  background:#050505;
+
+  color:#999;
+
+  font-size:18px;
+
+  margin-top:80px;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1100px){
+
+  .perfil{
+
+    flex-direction:column;
+    text-align:center;
+
+  }
+
+  .info h1{
+
+    font-size:55px;
+
+  }
+
+  .titulo-area h2{
+
+    font-size:55px;
+
+  }
+
+}
+
+@media(max-width:700px){
+
+  .hero{
+
+    padding:35px 18px;
+
+  }
+
+  .perfil{
+
+    padding:30px;
+
+  }
+
+  .logo{
+
+    width:180px;
+    height:180px;
+
+  }
+
+  .info h1{
+
+    font-size:38px;
+
+  }
+
+  .destaque{
+
+    font-size:26px;
+
+  }
+
+  .descricao{
+
+    font-size:18px;
+
+  }
+
+  .cidade{
+
+    font-size:18px;
+
+  }
+
+  .btn{
+
+    width:100%;
+
+    font-size:18px;
+
+  }
+
+  .titulo-area h2{
+
+    font-size:42px;
+
+  }
+
+  .galeria{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .foto{
+
+    min-height:320px;
+
+  }
+
+}
